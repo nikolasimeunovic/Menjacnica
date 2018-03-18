@@ -13,36 +13,48 @@ public class Valuta {
 		return naziv;
 	}
 	public void setNaziv(String naziv) {
+		if(naziv == null || naziv.equals(""))
+			throw new RuntimeException("Morate uneti naziv valute");
 		this.naziv = naziv;
 	}
 	public String getSkraceniNaziv() {
 		return skraceniNaziv;
 	}
 	public void setSkraceniNaziv(String skraceniNaziv) {
+		if(skraceniNaziv == null || skraceniNaziv.equals(""))
+			throw new RuntimeException("Morate uneti skraceni naziv valute");
 		this.skraceniNaziv = skraceniNaziv;
 	}
 	public double getProdajni() {
 		return prodajni;
 	}
 	public void setProdajni(double prodajni) {
+		if(prodajni == 0)
+			throw new RuntimeException("Morate uneti vrednost prodajnog kursa");
 		this.prodajni = prodajni;
 	}
 	public double getSrednji() {
 		return srednji;
 	}
 	public void setSrednji(double srednji) {
+		if(srednji == 0)
+			throw new RuntimeException("Morate uneti vrednost srednjeg kursa");
 		this.srednji = srednji;
 	}
 	public double getKupovni() {
 		return kupovni;
 	}
 	public void setKupovni(double kupovni) {
+		if(kupovni == 0)
+			throw new RuntimeException("Morate uneti vrednost kupovnog kursa");
 		this.kupovni = kupovni;
 	}
 	public GregorianCalendar getDatum() {
 		return datum;
 	}
 	public void setDatum(GregorianCalendar datum) {
+		if(datum == null)
+			throw new RuntimeException("Morate uneti datum");
 		this.datum = datum;
 	}
 	@Override
