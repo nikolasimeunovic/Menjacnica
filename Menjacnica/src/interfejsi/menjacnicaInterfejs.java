@@ -8,8 +8,8 @@ public interface menjacnicaInterfejs {
 
 	public void dodajKurs(Valuta valuta);
 	
-	public boolean obrisiKurs(Valuta valuta);
+	public void obrisiKurs(Valuta valuta);
 	
-	public Valuta pronadjiKurs(Valuta valuta);
+	public Valuta pronadjiKurs(String naziv, GregorianCalendar datum);
 	
 }
