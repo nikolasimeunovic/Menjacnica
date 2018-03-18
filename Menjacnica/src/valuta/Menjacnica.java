@@ -7,19 +7,19 @@ import interfejsi.menjacnicaInterfejs;
 public class Menjacnica implements menjacnicaInterfejs {
 
 	@Override
-	public void dodajKurs(Valuta valuta, GregorianCalendar datum) {
+	public void dodajKurs(Valuta valuta) {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public boolean obrisiKurs(Valuta valuta, GregorianCalendar datum) {
+	public boolean obrisiKurs(Valuta valuta) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public Valuta pronadjiKurs(Valuta valuta, GregorianCalendar datum) {
+	public Valuta pronadjiKurs(Valuta valuta) {
 		// TODO Auto-generated method stub
 		return null;
 	}
