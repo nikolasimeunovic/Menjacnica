@@ -8,7 +8,6 @@ public class Valuta {
 	private double prodajni,srednji,kupovni;
 	private GregorianCalendar datum;
 	
-
 	public String getNaziv() {
 		return naziv;
 	}
